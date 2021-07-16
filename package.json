@@ -1,5 +1,5 @@
 {
-  "name": "@gameswapfinance/uikit",
+  "name": "@lukkasromero/cswap-uikit",
   "version": "0.10.8",
   "description": "Set of UI components for pancake projects",
   "main": "dist/index.cjs.js",
