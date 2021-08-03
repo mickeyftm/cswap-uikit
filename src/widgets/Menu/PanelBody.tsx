@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { useLocation } from "react-router-dom";
 import { SvgProps } from "../../components/Svg";
 import * as IconModule from "./icons";
@@ -21,6 +21,9 @@ const Container = styled.div`
   overflow-x: hidden;
   height: 100%;
 `;
+
+
+
 
 const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
   const location = useLocation();
@@ -64,6 +67,39 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
           </MenuEntry>
         );
       })}
+
+      <div style={{marginLeft:10,marginRight:10,width:"auto"}} >
+      <a href="https://rugdoc.io/project/cryptoswap/" target="_blank">
+      <img  src={"https://rugdoc.io/assets/2021/05/rugdoc-review-badge-for-light-bg.png"}
+     
+     style={{width:200}}
+     />
+
+
+      </a>
+
+
+
+
+      <div style={{
+        padding: 20,
+        background: "lightgreen",
+        borderRadius: 10,
+        width: 200,
+
+      }}>
+        <h4>Rug Doc KYC Enabled</h4>
+      </div>
+     {/* <a href="" target="_blank"  style={{marginLeft:10,marginRight:10,marginTop:10}}>
+   
+    <img  src={"https://cswap.app/images/techrate.png"}
+      />
+      </a> */}
+      </div>
+
+
+   
+
     </Container>
   );
 };
